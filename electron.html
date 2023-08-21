@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6782990979940588"
+    crossorigin="anonymous"></script>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>LarinhaGG</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333; /* Cor de fundo cinza escuro */
+        }
+
+        header {
+            background-color: #222; /* Cor de fundo cinza mais escuro */
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza na vertical */
+            color: #fff;
+        }
+
+        footer {
+            background-color: #222; /* Cor de fundo cinza mais escuro */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        /* Estilos do painel meio redondo */
+        .panel {
+            background-color: #444; /* Cor de fundo cinza mais escuro */
+            padding: 15px; /* Aumenta o padding */
+            border-radius: 30px; /* Aumenta a curvatura das laterais */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 350px; /* Aumenta a largura do painel */
+            margin: 20px 10px; /* Centraliza horizontalmente */
+        }
+
+        .panel:hover {
+            background-color: #666;
+        }
+
+        .panel img {
+            width: 250px; /* Aumenta o tamanho da imagem */
+            height: auto;
+            margin-top: 15px;
+        }
+
+        .panel-content {
+            flex: 1;
+        }
+
+        .panel-title {
+            font-size: 20px; /* Aumenta o tamanho do título */
+            color: #fff;
+            margin: 0;
+        }
+
+        .panel-subtitle {
+            font-size: 16px; /* Aumenta o tamanho do subtítulo */
+            color: #ccc;
+            margin: 5px 0;
+        }
+
+        .panels-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Estilos gerais ... */
+        
+        /* Adicione os estilos da outra parte aqui */
+
+        .copy-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .copy-container img {
+            /* Estilos da imagem ... */
+            width: 320px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .copy-container h2 {
+            /* Estilos do título ... */
+            margin: 0;
+            color: #333;
+        }
+
+        .copy-box {
+            background-color: #444; /* Cor de fundo cinza */
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            width: auto;
+            box-sizing: border-box;
+            font-size: 14px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            text-align: left;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .copy-box input {
+            border: none;
+            background-color: transparent;
+            width: 100%;
+            font-size: inherit;
+            color: inherit;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .copy-button {
+            background-color: #0e0e0e;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        
+        .back-button {
+            background: url('seu-botao-de-voltar.jpg') no-repeat;
+            width: 50px;
+            height: 50px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-subtitle {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-wrapper">
+            <h1>LarinhaGG</h1>
+            <h3>2023 LarinhaGG. Todos os direitos reservados.</h3> <!-- Subtítulo adicionado -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/scripts.html">Scripts</a></li>
+                <li><a href="/executores.html">Executores</a></li>
+                <li><a href="/ajuda.html">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="copy-container">
+        <h2>LawHub</h2>
+        <div class="image-container">
+            <img src="electron.png" alt="Imagem Grande">
+            
+        </div>
+        <div class="copy-box">
+            <input type="text" value='https://ryos.lol' readonly>
+        </div>
+        <button class="copy-button" onclick="copyText()">Copiar</button>
+    </section>
+    
+
+
+
+
+    <script>
+        function copyText() {
+            var copyBox = document.querySelector('.copy-box input');
+            copyBox.select();
+            document.execCommand('copy');
+            alert('Texto copiado:\n' + copyBox.value);
+        }
+    </script>
+</body>
+</html>
